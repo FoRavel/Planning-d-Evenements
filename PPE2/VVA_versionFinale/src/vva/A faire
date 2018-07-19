@@ -1,0 +1,54 @@
+https://stackoverflow.com/questions/1376218/is-there-a-way-to-retrieve-the-autoincrement-id-from-a-prepared-statement
+https://docs.oracle.com/javase/tutorial/uiswing/components/dialog.html
+
+DonneesAnimation:
+    [ERGO]Trouver le moyen de n'écrire qu'une fois l'algorythme d'ajout d'une animation dans la table Animation.
+    [FAIT]Terminer d'écrire la fonction chargerActivite:
+        Charger toutes les Animation de la table animations, et les stocker chacune dans une référence de type Animation.
+        Toutes ces instances seront stockées dans un Arraylist.
+        Et pour chaque objet de cet Arraylist, charger depuis la table Activite, toutes les horaires/jour qui se rapportent à cet objet (WHERE idAnimation = objet.getId).
+        Stocker chacune de ces horaires et jour dans leur Arraylist respectifs qui constitueront les paramètres arraylist<horaire> et arraylist<libJour> de l'objet Activite crée ultérieurement.
+    [FAIT]Réparer la fonction booléenne "estInscrit" pour vérifier si au démarrage de la fenêtre, si le compte est inscrit ou non aux animations
+fenetre.java:
+    [FAIT] Modifier la fonction évenementielle (L.55), afin qu'elle permette la mise à jour du nombre d'inscrit de l'animation choisie.
+    [FAIT] Ajouter bouton "Desinscription", lors du clique, décrémente la valeur côté front-end, et met à jour la valeur côté back-end
+    [FAIT] Au démarrage lorsque le nombre d'inscription est égal au nombre limite d'inscription, désactiver le bouton d'inscription.
+    
+AffichageAnimation:
+    [FAIT]A faire (comment afficher dynamiquement composants swing?).
+
+JPlanifierEvenement:
+    
+
+JPlanifierActivite:
+    [ERGO]Remplacer les Textbox par des combobox. Limiter au maximum les saisies manuelles.
+
+ControleValidite:
+
+Failles:
+    Lorsqu'on enregistre une inscription directement par PhpMyAdmin, le nombre d'inscrit affiché sur la fenêtre de l'application ne change pas.
+    Il faut qu'à chaque chargement d'animation, compter via une requête le nombre d'inscription et l'afficher.
+
+connexion.java:
+    A créer! 
+
+Menu.java
+[FAIT] Créer évènement pour bouton "planifer". Redirection vers la page "JFChoixTypeAnimation.java
+Lorsqu'on ferme la fenêtre après avoir cliquer sur le bouton "liste des programmes", on ne peut plus la réouvrir.
+
+A FAIRE:
+[ERGO]CREER UNE CLASSE SQL POUR CHAQUE CLASSE METIER AU LIEU DE REGROUPER TOUTES LES FONCTIONS DANS UN SEUL FICHIER
+[OPTIONNEL]CREER UNE PAGE QUI RECENSE TOUTES LES ANIMATIONS OU L'UTILISATEUR EST INSCRIT
+[FAIT]REFAIRE LA CLASSE AFFICHAGEANIMATION COMME LA CLASSE AFFICHAGEACTIVITE
+[FAIT]TERMINER LA FICHE DES HORAIRES POUR LES ACTIVITES
+Diagramme de cas d'utilisation
+Diagramme de classe
+[FAIT]MCD
+[FAIT]Arborescence
+SUPPRESSION AUTOMATIQUE DES EVENEMENTS ECOULES
+
+
+Créer un champ "released" dans la table animation qui déterminera si l'animation est publié ou non.
+
+Mon idée était de définir pour chaque item de la combobox un index correspondant à l'id du type de l'animation. Mais on ne peut pas définir l'index que l'on veut pour chaque item car les index doivent se succéder
+(0,1,2,3,4....). Et cela est problématique lorsque les id dans la base de donnée sont désordonnés.

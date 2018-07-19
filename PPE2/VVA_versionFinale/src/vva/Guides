@@ -1,0 +1,47 @@
+FONCTIONS POUR CREER CALENDRIERS
+---------------------------------
+
+LocalDate.now()
+Date du jour.
+
+#Period.until()
+Calculates the period between this date and another date as a Period.
+https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html#until-java.time.chrono.ChronoLocalDate-
+
+#Period.between()
+Obtains a Period consisting of the number of years, months, and days between two dates.
+https://docs.oracle.com/javase/8/docs/api/java/time/Period.html
+
+Period.getMonths()
+Gets the amount of months of this period.
+https://docs.oracle.com/javase/8/docs/api/java/time/Period.html#getMonths--
+
+Period.getDays()
+Gets the amount of days of this period.
+
+LocalDate.getMonth(date)
+Obtenir le mois de la date passée en paramètre en lettre.
+
+LocalDate.of(xxxxxx)
+Crée une date.
+https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html#of-int-int-int-
+
+LocalDate.pludMonth(long monthsToAdd)
+Returns a copy of this LocalDate with the specified number of months added.
+https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html#plusMonths-long-
+
+LocalDate.withDayOfMonth(int dayOfMonth)
+Returns a copy of this LocalDate with the day-of-month altered.
+https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html#withDayOfMonth-int-
+
+LocalDate.getMonthValue()
+Gets the month-of-year field from 1 to 12.
+
+ChronoUnit.DAYS.between(currentDate, nextMonth);
+
+# = equivalent
+
+31-12-2018
+
+02
+
