@@ -1,7 +1,7 @@
 # Planning-d-Evenements
 Planifier des évènements 
 
-Cette application de bureau codé en JAVA, permets de planifier des évènements. Et aux utilisateurs finaux, de s'y inscrire.
+Cette application de bureau codée en JAVA, permet de planifier des évènements. Et aux utilisateurs finaux, de s'y inscrire.
 
 Ce projet a servi de support à l'épreuve E4 du BTS.
 
